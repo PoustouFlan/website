@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoustouFlan - Site personnel</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PoustouFlan</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">À propos</a></li>
+        <li><a href="#music">Concerts</a></li>
+        <li><a href="#news">Nouvelles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Section Présentation -->
+    <section id="bio" class="section-bg">
+      <h2>$ whoami</h2>
+      <div>
+      <div class="bio-flex">
+        <div class="bio-photo">
+          <img src="profile.jpg" alt="Photo de PoustouFlan" class="profile-photo lightboxable">
+        </div>
+        <div class="bio-text">
+          <p>
+            Hello, moi c'est Quentin !
+            Je suis un étudiant en 4ème année à l'EPITA, connu sous le pseudonyme
+            « PoustouFlan ».
+            Mes principales passions sont l'algorithmique et la cryptographie,
+            et j'aimerai continuer à y travailler après mes études au travers
+            de l'enseignement ou de la recherche.
+          </p>
+          <p>
+            Toutefois, ce site a été conçu pour présenter mes autres activités,
+            en particulier, mes activités en musique.
+            Je joue principalement du piano depuis que j'ai 5 ans et,
+            même si cela n'est pas mon projet professionnel, je participe régulièrement à des compétitions
+            depuis le collège. J'ai notamment obtenu une seconde place au Concours
+            International de Piano Claude Kahn au lycée !
+          </p>
+        </div>
+      </div>
+
+      <p>
+        Je vous présente : mini-moi à 12 ans, jouant salle Gaveau devant
+        un nombre de personnes qui se comptait à 4 chiffres.
+      </p>
+
+      <div class="videos">
+          <iframe src="https://www.youtube.com/embed/8M76avB0B08?si=5FdaKcQ5vJHwPp8A&amp;start=59" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <p>
+        Je continue toujours à jouer du piano aujourd'hui, même si
+        le temps libre se fait de plus en plus rare (EPITA m'a tout pris).
+        Quand j'en ai l'occasion, j'essaie d'enregistrer quelques
+        morceaux pour les partager aux quelques mélomanes qui le veulent.
+      </p>
+      <p>
+        Voici par exemple deux enregistrements (relativement)
+        récents :
+        <ul>
+            <li> Une tentative de participer une nouvelle fois au Concours
+                Claude Kahn en prépa. La vidéo est prise pendant les
+                sélections, j'y joue une fantaisie impromptue et
+                une étude de Chopin.</li>
+            <li>Une interprétation d'Ondine de Ravel, accompagnée par Vanessa
+                Lillian, professeure de théatre.</li>
+        </ul>
+      </p>
+      <div class="videos">
+          <div>
+          <iframe src="https://www.youtube.com/embed/N9kKcC2iXBg?si=x5l7JNoMv3M2UeDl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/8BdPHtMMazk?si=HRJBX5JhtBY0Yh0C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+      </div>
+      <p>
+        De plus, l'année dernière,
+        j'ai découvert le chant en rejoignant le chœur brasseur, avec lequel
+        j'ai eu l'honneur de chanter lors de concerts à Cannes et à Paris.
+      </p>
+      <ul class="social-links">
+        <li><a href="https://www.linkedin.com/in/quentin-rataud-334997215/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/Poustouflan" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- Séparateur -->
+    <hr class="divider">
+    
+    <!-- Section Concerts -->
+    <section id="music" class="section-bg">
+      <h2>Extraits de mes derniers concerts</h2>
+      <div class="carousel-container">
+        <button id="prevBtn" class="carousel-btn">&#10094;</button>
+        <div class="video-slider" id="videoSlider">
+          <div class="slide">
+            <img src="poster.jpeg" alt="Concert Poster 1" class="concert-poster lightboxable">
+            <iframe src="https://www.youtube.com/embed/A7iONjrcuug?si=qkovi-mEX9NUbIKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="slide">
+                <img src="poster2.jpg" alt="Concert Poster 2" class="concert-poster lightboxable">
+                <iframe src="https://www.youtube.com/embed/Sv-TS6euMu0?si=MxmcdX9-rz_BA9Kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button id="nextBtn" class="carousel-btn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Séparateur -->
+    <hr class="divider">
+    
+    <!-- Section Nouvelles -->
+    <section id="news" class="section-alt">
+      <h2>Lisez les news !</h2>
+      <div>
+      <div class="upcoming-events">
+        <h3>Événements à venir</h3>
+        <p>Rien de prévu pour l'instant, apparemment faut bosser aussi un peu
+        à EPITA :(</p>
+      </div>
+      <div class="past-events">
+        <h3>Événements passés</h3>
+        <div class="event">
+          <img src="poster.jpeg" alt="Poster Concert 1" class="concert-poster lightboxable">
+          <div class="event-description">
+            <h4>22 Mars 2025 — Tubes du classique et de l'opérette</h4>
+            <p>
+                Salle pleine pour ce concert au domaine de Clairis !
+                Avec Aliénor Schmitlin en soprano solo,
+                Antoine Sebillotte en chef de chœur et au hautbois,
+                Clément Rataud (mon frère !) au piano,
+                et Philippe Lesgourgues à la flûte,
+                accompagnés par le chœur de Clairis dont je fais partie.
+
+                Je chante Ténor dans la plupart des musiques,
+                et j'interviens au piano pour les 4-mains et plus !
+                (Vous avez déjà entendu un 8-mains ?)
+
+                <ol>
+                    <li>Massenet — Je suis encore</li>
+                    <li>Ravel — Kaddish</li>
+                    <li>Mozart — Laudate Dominum</li>
+                    <li>Bach — Jesus que ma joie demeure</li>
+                    <li>Bellini — Casta Diva</li>
+                    <li>Dring — Trio pour flûte, hautbois et piano (II)</li>
+                    <li>Dring — Trio pour flûte, hautbois et piano (III)</li>
+                    <li>Agay, Paganini, Offenbach, Mozart, Tchaikovsky — Medlay pour piano à 4 mains</li>
+                    <li>Rachmaninov — Romance pour piano à 6 mains</li>
+                    <li>Webber — Le fantôme de l'Opéra pour piano à 8 mains</li>
+                    <li>Webber — Think of Me</li>
+                    <li>Mozart — Les noces de Figaro</li>
+                    <li>Offenbach — Je suis veuve d'un colonel</li>
+                    <li>Verdi — Va pensiero</li>
+                    <li>Bizet — Habanera</li>
+                    <li>Messager — J'ai deux amants</li>
+                    <li>Haendel — Hallelujah</li>
+                    <li>Herbert — Art Is Calling for Me</li>
+                    <li>Offenbach — Je suis veuve d'un colonel (bis)</li>
+                </ol>
+
+                Retrouvez un enregistrement de la plupart des morceaux
+                dans <a href="https://www.youtube.com/playlist?list=PLgirpuPUXUu1DRAbs-ehZXyI0RJvYhuga" target="_blank">
+                    cette playlist YouTube
+                </a> :
+            </p>
+
+            <div class="videos">
+              <iframe src="https://www.youtube.com/embed/videoseries?si=mYKxwaEAjEP4Zyaq&amp;list=PLgirpuPUXUu1DRAbs-ehZXyI0RJvYhuga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <img src="poster2.jpg" alt="Poster Concert 2" class="concert-poster lightboxable">
+          <div class="event-description">
+            <h4>8 Mars 2025 — Concerto pour piano</h4>
+            <p>
+                Salle pleine à l'École de musique intercommunale des Vallées de
+                la Braye et de l'Anille pour deux concertos pour piano
+                de Bach, interprétés par Marie Jenn et moi-même.
+
+                Avec Catherine Kwon (ma professeure de piano)
+                qui accompagne sur un second piano en jouant une réduction
+                de l'orchestre, j'interprète dans son intégralité
+                le premier concerto pour piano de Bach.
+
+                Retrouvez un enregistrement du premier mouvement
+                ici :
+            </p>
+            <div class="videos">
+              <iframe src="https://www.youtube.com/embed/Sv-TS6euMu0?si=MxmcdX9-rz_BA9Kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Séparateur -->
+    <hr class="divider">
+
+     <!-- Section Contact -->
+    <section id="contact" class="section-alt">
+      <h2>Contact</h2>
+      <div class="contact-flex">
+        <div class="contact-photo">
+          <img src="discord_profile.png" alt="Photo de profil Discord" class="profile-photo lightboxable">
+        </div>
+        <div class="contact-text">
+          <p>Pour me contacter, envoyez-moi un message via Discord :</p>
+          <p>
+            <a href="https://discordapp.com/users/427489795673948162" target="_blank">
+              <i class="fab fa-discord"></i> PoustouFlan sur Discord
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Codé avec le cul par &copy; 2025 PoustouFlan. Tous droits réservés.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

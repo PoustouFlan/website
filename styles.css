@@ -1,0 +1,276 @@
+body {
+  background: 
+          linear-gradient(
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+      url('bgpattern.png') repeat;
+  backdrop-filter: blur(1px);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #EEE;
+  font-size: 20px;
+}
+
+/* Header & Navigation */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+a {
+  color: #FFD700;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Conteneur flex pour la biographie */
+.bio-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.bio-photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #FFD700;
+}
+
+/* Conteneur flex pour la section Contact */
+.contact-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-photo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #FFD700;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sections alternées pour mieux les différencier */
+.section-bg {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+.section-alt {
+  background-color: rgba(70, 70, 70, 0.7);
+}
+
+/* Séparateur */
+.divider {
+  border: 0;
+  height: 2px;
+  background: #EEAD49;
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* Bio Section */
+#bio ul.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+#bio ul.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* News Section */
+#news .upcoming-events, 
+#news .past-events {
+  margin: 20px 0;
+}
+
+#news .event {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background: #474747;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#news .event img.event-poster {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Carousel Section */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+  min-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  background: #808080C0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border: 3px solid #333;
+}
+
+.video-slider {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.concert-poster {
+  width: auto;
+  height: 315px;
+  margin-right: 20px;
+  border: 3px solid #555;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+  border: 3px solid #555;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+/* Lightbox */
+#lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
