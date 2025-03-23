@@ -5,12 +5,16 @@ body {
           rgba(0, 0, 0, 0.8)
         ),
       url('bgpattern.png') repeat;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
+  background-attachment: fixed;
+  background-size: cover;
+
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #EEE;
   font-size: 20px;
+  text-align: justify;
 }
 
 /* Header & Navigation */
@@ -202,6 +206,9 @@ section {
   border: 3px solid #555;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lightboxable{
   cursor: pointer;
 }
 

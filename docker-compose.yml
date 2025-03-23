@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  poustouflan-website:
+    image: nginx:alpine
+    container_name: poustouflan-website
+    volumes:
+      - /var/www/website:/usr/share/nginx/html:ro
+    networks:
+      - web
+    restart: unless-stopped
+
+networks:
+  web:
+    external: true
+
